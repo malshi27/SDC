@@ -1,0 +1,54 @@
+/* Apply Montserrat font to the entire page */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style the accordion header */
+.accordion-header button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight */
+    font-size: 18px; /* Optional: adjust font size */
+    color: #154a94; /* Apply the color to the header text */
+    background-color: #f8f9fa; /* Light background color for the header */
+}
+/* Style the accordion header when active (expanded) */
+.accordion-header button:not(.collapsed) {
+    color: #fff; /* Change text color to white when expanded */
+    background-color: #154a94; /* Blue background when expanded */
+/
+}
+/* Style the accordion header when collapsed */
+.accordion-header button.collapsed {
+    color: #154a94; /* Ensure the text color remains when collapsed */
+    background-color: #f8f9fa; /* Keep the same background color when collapsed */
+}
+
+/* Style the accordion body */
+.accordion-body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; /* Optional: adjust font size for body */
+    line-height: 1.5; /* Optional: adjust line height */
+    background-color: #e9ecef; /* Light background for the body */
+    color: #154a94; /* Apply the color to the text inside the body */
+}
+
+/* Optional: Accordion item style */
+.accordion-item {
+    margin-bottom: 10px; /* Optional: space between items */
+}
+
+/* Optional: Style for accordion collapse animation */
+.accordion-button {
+    transition: all 0.3s ease;
+}
+
+/* Adjust accordion button when collapsed */
+.accordion-button.collapsed {
+    color: #154a94;
+    background-color: #f8f9fa;
+}
+
+/* Optional: Style accordion when expanded */
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef;
+}
