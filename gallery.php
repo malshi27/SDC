@@ -34,7 +34,7 @@
 
     <!-- Full Screen Search End -->
 
-    <div class="gallery-container">
+    <!-- <div class="gallery-container">
     <div class="gallery-item">
         <img src="img/blog-1.jpg" alt="Image 1">
     </div>
@@ -45,7 +45,7 @@
         <img src="img/blog-3.jpg" alt="Image 3">
     </div>
     <div class="gallery-item">
-        <img src="img/carousel-1.jpg" alt="Image 4">
+        <img src="img/Bird.jpg" alt="Image 4">
     </div>
     <div class="gallery-item">
         <img src="img/carousel-2.jpg" alt="Image 5">
@@ -57,8 +57,35 @@
         <img src="img/carousel-1.jpg" alt="Image 7">
     </div>
     <div class="gallery-item">
-        <img src="img/blog-3.jpg" alt="Image 8">
+        <img src="img/DSC08803.JPG" alt="Image 8">
     </div>
+</div> -->
+
+<div class="album">
+  <div class="responsive-container-block bg">
+    <div class="responsive-container-block img-cont">
+      <img class="img" src="img/blog-1.jpg">
+      <img class="img" src="img/blog-2.jpg">
+      <img class="img img-last" src="img/blog-3.jpg">
+    </div>
+    <div class="responsive-container-block img-cont">
+      <img class="img img-big" src="img/carousel-1.jpg">
+      <img class="img img-big img-last" src="img/carousel-3.png">
+      <img class="img" src="img/DSC08803.JPG">
+    </div>
+    <div class="responsive-container-block img-cont">
+      <img class="img" src="img/carousel-2.jpg">
+      <img class="img" src="img/DSC08803.JPG">
+      <img class="img" src="img/Bird.jpg">
+    </div>
+  </div>
 </div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
 
 <?php include './componets/footer.php'; ?>

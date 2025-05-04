@@ -103,7 +103,33 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    
+
+    <!-- Lightbox JS -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox-close');
+        const images = document.querySelectorAll('.img');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'block';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

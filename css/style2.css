@@ -1,11 +1,11 @@
 /* Apply Montserrat font to the entire page */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Style the accordion header */
 .accordion-header button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500; /* Medium weight */
     font-size: 18px; /* Optional: adjust font size */
     color: #154a94; /* Apply the color to the header text */
@@ -25,7 +25,7 @@ body {
 
 /* Style the accordion body */
 .accordion-body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px; /* Optional: adjust font size for body */
     line-height: 1.5; /* Optional: adjust line height */
     background-color: #e9ecef; /* Light background for the body */

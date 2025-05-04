@@ -497,24 +497,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-    padding: 100px;
-    margin: 0 20px;
-    background-color: #fff;
+    column-count: 4;
+    column-gap: 1rem;
+    padding: 20px;
 }
 
 .gallery-item {
-    position: relative;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .gallery-item img {
     width: 100%;
+    display: block;
     height: auto;
-    transition: transform 0.3s ease;
+    border-radius: 8px;
 }
+
 
 .gallery-item:hover img {
     transform: scale(1.1);
@@ -539,24 +542,184 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+.album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .album .responsive-container-block.bg {
+    max-width: 1320px;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+  }
+  
+  .album .img {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  
+  .album #i9rb {
+    color: black;
+  }
+  
+  .album #ir6i {
+    color: black;
+  }
+  
+  .album #ikz3b {
+    color: black;
+  }
+  
+  .album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    min-height: auto;
+    margin: 0 0 0 0;
+    height: 100%;
+  }
+  
+  .album #ipix {
+    color: black;
+  }
+  
+  .album #ipzoh {
+    color: black;
+  }
+  
+  .album #ig5q8 {
+    color: black;
+  }
+  
+  .album #imtzl {
+    color: black;
+  }
+  
+  .album #i53es {
+    color: black;
+  }
+  
+  .album .img.img-big {
+    height: 50%;
+    margin: 0 0 16px 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .album .img {
+      margin: 0 0 18px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .album .img {
+      max-width: 32.5%;
+      margin: 0 0 0 0;
+    }
+  
+    .album .responsive-container-block.bg {
+      flex-direction: column;
+    }
+  
+    .album .responsive-container-block.img-cont {
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .album .img.img-big {
+      max-width: 49%;
+      margin: 0 0 0 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .album .img {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album .responsive-container-block.img-cont {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+    }
+  
+    .album .img.img-big {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album .img.img-last {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .lightbox-close:hover {
+    color: #ccc;
+  }
+  
 
 /* Programs */
 
 /* Apply Montserrat font to the entire page */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 
 /* Style the accordion header */
 .accordion-header button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500; /* Medium weight */
+    font-family: 'Montserrat';
+    font-weight: 700; /* Medium weight */
     font-size: 18px; /* Optional: adjust font size */
 }
 
 /* Style the accordion body */
 .accordion-body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px; /* Optional: adjust font size for body */
     line-height: 1.5; /* Optional: adjust line height */
 }
